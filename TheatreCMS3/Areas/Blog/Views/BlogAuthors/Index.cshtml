@@ -15,7 +15,8 @@
     @foreach (var author in Model)
     {
         <div>
-            @Html.Partial("BlogAuthor", author, new ViewDataDictionary { { "BlogPhoto", "/Content/images/placeholder.jpg" }, { "TwitterUrl", "https://twitter.com/example" }, { "FacebookUrl", "https://facebook.com/example" } })
+            @Html.Partial("BlogAuthor", author, new ViewDataDictionary { { "BlogPhoto", "/Content/images/placeholder.jpg" }, 
+           { "TwitterUrl", "https://twitter.com/example" }, { "FacebookUrl", "https://facebook.com/example" } })
         </div>
     }
 </div>

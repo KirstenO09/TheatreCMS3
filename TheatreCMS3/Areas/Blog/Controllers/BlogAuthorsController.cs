@@ -74,7 +74,7 @@ namespace TheatreCMS3.Areas.Blog.Controllers
         // POST: Blog/BlogAuthors/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "BlogAuthorId,Name,Bio,Joined,Left")] BlogAuthor blogAuthor)
+        public ActionResult Create([Bind(Include = "BlogAuthorId,FirstName,LastName,Bio,Joined,Left")] BlogAuthor blogAuthor)
         {
             if (ModelState.IsValid)
             {
@@ -104,7 +104,7 @@ namespace TheatreCMS3.Areas.Blog.Controllers
         // POST: Blog/BlogAuthors/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "BlogAuthorId,Name,Bio,Joined,Left")] BlogAuthor blogAuthor)
+        public ActionResult Edit([Bind(Include = "BlogAuthorId,FirstName,LastName,Bio,Joined,Left")] BlogAuthor blogAuthor)
         {
             if (ModelState.IsValid)
             {
